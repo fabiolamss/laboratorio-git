@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial de Git - Lab 2</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap para el punto 7 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5">
         <header class="text-center mb-5">
-            <h1 class="display-4">Guía Rápida de Git</h1>
+            <h1 class="display-4 text-primary">Guía Rápida de Git</h1>
             <p class="lead">Conceptos fundamentales para el control de versiones.</p>
         </header>
 
+        <!-- Sistema de Rejillas (Paso 7) -->
         <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm border-primary">
                     <div class="card-body">
                         <h3>¿Qué es Git?</h3>
-                        <p>Git es un sistema de control de versiones distribuido que permite rastrear cambios en el código fuente durante el desarrollo de software.</p>
+                        <p>Git es un sistema de control de versiones distribuido que permite rastrear cambios en el código fuente.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm border-success">
                     <div class="card-body">
                         <h3>Comandos Básicos</h3>
                         <ul>
                             <li><code>git init</code>: Inicia un repositorio.</li>
-                            <li><code>git add</code>: Prepara archivos para el commit.</li>
-                            <li><code>git commit</code>: Guarda una captura de los cambios.</li>
+                            <li><code>git add</code>: Prepara archivos.</li>
+                            <li><code>git commit</code>: Guarda cambios.</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm border-warning">
+                    <div class="card-body">
+                        <h3>Flujo de Trabajo</h3>
+                        <p>El flujo típico consiste en: Modificar -> Stage (add) -> Commit -> Push.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido Nuevo Agregado (Paso 7) -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="p-4 bg-light rounded border">
+                    <h3>Preguntas Frecuentes (FAQ)</h3>
+                    <div class="accordion mt-3" id="gitFaq">
+                        <p><strong>¿Por qué usar ramas?</strong> Permiten trabajar en funciones nuevas sin romper el código que ya funciona en la rama principal.</p>
+                        <p><strong>¿Qué es un Commit?</strong> Es como una "foto" o captura del estado de tus archivos en un momento exacto.</p>
                     </div>
                 </div>
             </div>
